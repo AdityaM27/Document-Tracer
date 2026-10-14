@@ -1,0 +1,81 @@
+====================================================================
+               DOCUMENT TRACER: QUICK START GUIDE
+====================================================================
+
+1. HOW TO START THE APPLICATION
+--------------------------------------------------------------------
+Simply DOUBLE-CLICK:
+    start.bat
+
+This one-click launcher will automatically:
+  - Detect your Python virtual environment (.venv)
+  - Verify and compile the C++ backend (if needed)
+  - Check whether any services are already running (no duplicates)
+  - Start the Python AI Microservice (Port 8000)
+  - Start the C++ REST API Server (Port 8080)
+  - Start the React/Vite Frontend (Port 5173)
+  - Verify all health endpoints
+  - Open http://localhost:5173 in your default web browser
+
+Each service runs in its own titled terminal window so you can
+monitor live server logs at all times.
+
+
+2. HOW TO STOP THE APPLICATION
+--------------------------------------------------------------------
+Simply DOUBLE-CLICK:
+    stop.bat
+
+This will safely terminate ONLY the Document Tracer services:
+  - C++ Backend Server (docutrace_server.exe)
+  - Python AI service listening on Port 8000
+  - Frontend Vite server listening on Port 5173
+
+It will NEVER terminate any unrelated Python, Node.js, or system
+processes running elsewhere on your computer.
+
+
+3. NETWORK PORTS USED
+--------------------------------------------------------------------
+  - Port 5173: React + TypeScript + Vite Web Dashboard
+               http://localhost:5173
+
+  - Port 8080: C++ High-Performance REST API Server
+               http://127.0.0.1:8080/api/health
+
+  - Port 8000: Python Flask AI Classification Microservice
+               http://127.0.0.1:8000/health
+               Model: roberta-base-openai-detector (Pretrained)
+
+
+4. VIEWING LOGS & ERRORS
+--------------------------------------------------------------------
+When started via start.bat, each service runs in a separate window:
+  - "Document Tracer AI Service (Port 8000)"
+  - "Document Tracer C++ Server (Port 8080)"
+  - "Document Tracer Frontend (Port 5173)"
+
+If any service encounters an issue, its terminal window stays OPEN
+and displays the exact error message.
+
+
+5. TROUBLESHOOTING & COMMON FIXES
+--------------------------------------------------------------------
+* Port Conflict / Service Already Running:
+  If start.bat reports a port is already in use, run stop.bat first
+  to clear existing Document Tracer instances, then run start.bat again.
+
+* Python Virtual Environment:
+  If the AI service displays a warning about missing packages, run:
+      .\.venv\Scripts\pip.exe install -r ai_service\requirements.txt
+
+* Rebuilding C++ from Scratch:
+  If you modify C++ source code in src/ or backend/, run:
+      cmake --build build --target docutrace_server
+  or simply run start.bat.
+
+* Running System Self-Tests:
+  Open the web dashboard at http://localhost:5173 and click
+  "Run Self-Test" to run live automated verification benchmarks
+  across identical, partial, paraphrased, and unrelated documents.
+====================================================================

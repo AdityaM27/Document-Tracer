@@ -1,0 +1,43 @@
+# Build directories & binaries
+build/
+bin/
+obj/
+*.exe
+*.a
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+
+# Node / Vite
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+frontend/.vite/
+
+# Python cache & virtual environments
+__pycache__/
+*.pyc
+venv/
+.venv/
+.venv*/
+env/
+.env
+
+# Data & Output runtime caches
+data/cache/*
+!data/cache/.gitkeep
+data/input/*
+!data/input/.gitkeep
+output/*
+!output/.gitkeep
+data/references/index_cache.json
+
+# IDE & Editor artifacts
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db

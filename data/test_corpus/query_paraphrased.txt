@@ -1,0 +1,4 @@
+The operating system serves as a bridge connecting software applications with computer hardware components.
+The primary duties of the OS kernel involve handling processes, managing paging in virtual memory,
+controlling storage file systems, and regulating device I/O. A process is an executing program instance.
+Processor time is distributed across active threads by the CPU scheduling subsystem using various policies.

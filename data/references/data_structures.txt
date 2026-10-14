@@ -1,0 +1,5 @@
+A data structure is a specialized format for organizing, processing, retrieving, and storing data.
+Binary search trees maintain a sorted collection of keys, providing average logarithmic search, insertion,
+and deletion time complexity. Hash tables utilize hashing functions to map unique keys to array indices,
+offering constant average-time lookups. Asymptotic notation, specifically Big O, describes the upper bound
+of an algorithm runtime growth rate.

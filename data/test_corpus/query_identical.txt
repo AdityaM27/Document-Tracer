@@ -1,0 +1,8 @@
+Object-Oriented Programming (OOP) in C++ is a foundational programming paradigm.
+It organizes software design around data, or objects, rather than functions and logic.
+The primary pillars of OOP are encapsulation, data abstraction, inheritance, and polymorphism.
+Encapsulation binds data members and member functions into a single unit, hiding implementation details.
+Inheritance permits a derived class to inherit member properties from an existing base class.
+Polymorphism enables objects of different types to respond to the same interface via virtual functions.
+Resource Acquisition Is Initialization (RAII) ensures that resources such as heap memory and mutexes
+are deterministically released when stack-allocated objects exit their enclosing scope.

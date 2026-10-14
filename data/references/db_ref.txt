@@ -1,0 +1,1 @@
+Database management systems provide ACID guarantees for transactions. Relational engines utilize B+ trees for indexing and SQL for declarative querying.

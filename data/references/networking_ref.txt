@@ -1,0 +1,1 @@
+Computer networking is the interconnection of computing devices using telecommunications links. Routers forward packets across networks using IP routing tables and protocol standards like TCP/IP.

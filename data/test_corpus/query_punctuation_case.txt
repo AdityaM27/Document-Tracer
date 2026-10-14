@@ -1,0 +1,4 @@
+A DATA STRUCTURE is a SPECIALIZED format for organizing processing retrieving and storing data!
+Binary Search Trees maintain a sorted collection of keys providing average logarithmic search insertion
+and deletion time complexity... HASH tables utilize hashing functions to map unique keys to array indices!
+Offering constant average-time lookups? Asymptotic notation describes runtime growth rate.

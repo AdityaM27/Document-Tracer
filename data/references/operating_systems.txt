@@ -1,0 +1,5 @@
+An operating system acts as an intermediary between computer hardware and the application programs.
+The core responsibilities of an operating system kernel include process management, virtual memory paging,
+file system management, and input-output device control. A process represents an instance of a computer program
+in active execution. The CPU scheduler allocates processor time among concurrent threads using algorithms
+such as Round Robin, Shortest Job First, and Multi-Level Feedback Queues.
